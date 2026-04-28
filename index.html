@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My PopList 2</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1 id="numberOfPops">Liste des Pops</h1>
+			<p>Veuillez saisir la Pop que vous rechercher (Recherche dans le Numero, le Code Barre ou le Nom) : </p>
+			<table>
+				<tr>
+					<td align="right"><div id="divGroupResult"></div></td>
+					<td align="left"><div id="divLicenseResult"></div></td>
+					<td align="left"><div id="divZoneResult"></div></td>
+					<td align="left"><div id="divTypeResult"></div></td>
+					<td align="left"><input type="text" id="inputPopInfo" required minlength="0" maxlength="50" size="40" label="Test" autocomplete="off" style="height: 40px;"/></td>
+					<td><button id="buttonReset" style="background-color: gray; color: white; width: 100px; height: 40px; font-size: 14px;">Reset</button></td>
+				</tr>
+			</table>	
+			<div id="divTableReult"></div>
+			<h1 id="versionOfPops">Version 0.0.0 (2024-01-01)</h1>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
