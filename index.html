@@ -12,12 +12,19 @@
 			<p>Veuillez saisir la Pop que vous rechercher (Recherche dans le Numero, le Code Barre ou le Nom) : </p>
 			<table>
 				<tr>
-					<td align="right"><div id="divGroupResult"></div></td>
-					<td align="left"><div id="divLicenseResult"></div></td>
-					<td align="left"><div id="divZoneResult"></div></td>
-					<td align="left"><div id="divTypeResult"></div></td>
-					<td align="left"><input type="text" id="inputPopInfo" required minlength="0" maxlength="50" size="40" label="Test" autocomplete="off" style="height: 40px;"/></td>
-					<td><button id="buttonReset" style="background-color: gray; color: white; width: 100px; height: 40px; font-size: 14px;">Reset</button></td>
+					<td><div id="divGroupResult"></div></td>
+					<td><div id="divLicenseResult"></div></td>
+					<td><div id="divZoneResult"></div></td>
+					<td><div id="divTypeResult"></div></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td align="left">
+						<label>Rechercher dans les champs : </label>
+						<input type="text" id="inputPopInfo" required minlength="0" maxlength="50" size="40" label="Test" autocomplete="off"/>
+						<button id="buttonReset" style="background-color: gray; color: white; width: 100px; font-size: 14px;">Reset</button>
+					</td>
 				</tr>
 			</table>	
 			<div id="divTableReult"></div>

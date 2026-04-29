@@ -132,7 +132,8 @@ function GetObjectWithFieldAlreadyInList(list, field, str)
 async function CreateSelectGroup()
 {
 	// Starting the HTML section Select
-	let str = '<select id="selectGroup" style="height: 40px; font-size: 16px;">';
+	//let str = '<select id="selectGroup" style="height: 40px; font-size: 16px;">';
+	let str = '<select id="selectGroup">';
 
 	// Group Options with Ids
 	str += '<option id="selectGroupPOS" value="POS">Pops Possédées</option>';
@@ -180,7 +181,8 @@ async function CreateSelectLicenses()
 	licenseList.sort();
 	
 	// Starting the HTML section Select
-	let str = '<select id="selectLicense" style="height: 40px; font-size: 16px;">';
+	//let str = '<select id="selectLicense" style="height: 40px; font-size: 16px;">';
+	let str = '<select id="selectLicense">';
 
 	// 1st Option : ALL
 	str += '<option value="ALL">Toutes les Licenses</option>';
@@ -201,7 +203,8 @@ async function CreateSelectLicenses()
 async function CreateSelectZones()
 {
 	// Starting the HTML section Select
-	let str = '<select id="selectZone" style="height: 40px; font-size: 16px;">';
+	//let str = '<select id="selectZone" style="height: 40px; font-size: 16px;">';
+	let str = '<select id="selectZone">';
 
 	// Zone Options with Ids
 	str += '<option value="ALL">Toutes les Zones</option>';
@@ -346,7 +349,8 @@ async function CreateSelectType()
 	typeList.sort();
 	
 	// Starting the HTML section Select
-	let str = '<select id="selectType" style="height: 40px; font-size: 16px;">';
+	//let str = '<select id="selectType" style="height: 40px; font-size: 16px;">';
+	let str = '<select id="selectType">';
 
 	// 1st Option : ALL
 	str += '<option value="ALL">Tous les Types</option>';
@@ -519,7 +523,7 @@ async function CreateTableResults(selectGroupValue, selectLicenseValue, selectZo
 	let popDatas = await PopData_Async();
 
 	// Starting the HTML section Table
-	let str = '<br><table border="1" width="100%"><tbody>';
+	let str = '<br><table border="1"><tbody>';
 
 	// Add it to the list
 	str += '<tr style="background-color:skyblue;">';
